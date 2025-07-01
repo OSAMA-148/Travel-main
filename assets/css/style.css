@@ -1,0 +1,111 @@
+body {
+  background-color: #eee;
+}
+p {
+  margin-top: 10px;
+}
+#book,
+#services,
+#about,
+footer {
+  background-color: #f8f9fa;
+}
+.main-color {
+  color: #ffa600;
+}
+.main-background {
+  background-color: #ffa600 !important;
+}
+.main-background:hover {
+  background-color: #ad7306 !important;
+}
+.navbar-brand::first-letter {
+  color: #ffa600;
+  font-size: 2em;
+  font-weight: bold;
+}
+header {
+  height: 100vh;
+}
+.background {
+  background: url(../images/backgroundimg.png);
+  width: 100%;
+  height: calc(100vh - 86px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.background h2 {
+  font-size: 35px;
+}
+.background h1 {
+  font-size: 60px;
+}
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 0;
+}
+.background h1,
+.background h2,
+.background p,
+.background button {
+  z-index: 2;
+}
+.heading {
+  padding: 10px 20px;
+  border: 2px solid #ffa600;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 7px;
+  font-size: 25px;
+}
+.heading h2::first-letter {
+  color: #ffa600;
+}
+.rate i {
+  color: #ffa600;
+}
+#services i {
+  font-size: 50px;
+}
+.card {
+  box-shadow: 0px 5px 10px -5px black;
+}
+#gallery .card:hover .caption {
+  bottom: 0;
+  height: 100%;
+}
+#gallery .card  {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+#gallery .card .caption {
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  background-color: #12111133;
+  width: 100%;
+  transition: 0.3s;
+  bottom: -185%;
+}
+#gallery .card .caption h4 {
+  color: #ffa600;
+  font-weight: bold;
+}
+#gallery .card .caption h2 {
+  color: #ffa600;
+  font-weight: bold;
+}
+#gallery .card .caption p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
